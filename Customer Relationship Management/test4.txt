@@ -1,0 +1,7 @@
+Purchase Cred Rattles 85
+Inventory Rattles 26
+Inventory Rattles -27
+Purchase Ellie Rattles 7.5
+Purchase Billie Rattles 8
+Summarize
+Quit

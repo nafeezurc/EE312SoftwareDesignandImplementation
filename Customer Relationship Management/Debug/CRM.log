@@ -1,0 +1,5 @@
+﻿  Project4.cpp
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project4\project4.cpp(270): warning C4244: '=': conversion from 'uint64_t' to 'uint16_t', possible loss of data
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project4\project4.cpp(275): warning C4244: '=': conversion from 'uint64_t' to 'uint16_t', possible loss of data
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project4\project4.cpp(280): warning C4244: '=': conversion from 'uint64_t' to 'uint16_t', possible loss of data
+  CRM.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Project4\Debug\CRM.exe
