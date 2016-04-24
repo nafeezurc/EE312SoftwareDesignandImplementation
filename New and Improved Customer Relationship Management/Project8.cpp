@@ -87,7 +87,7 @@ This function searches through the CustomerDB "database" and returns the Custome
 the specified type. type must be one of "Bottles", "Rattles" or "Diapers". Note: if two or more Customers are tied for 
 having purchased the most of that item type, then findMax returns the first Customer in the CustomerDB who has purchased 
 that maximal quantity. Note: in the special case (invalid case) where there are zero Customers in the CustomerDB, 
-findMax returns a null pointer (0).
+findMax returns a null pointer (0). This function was given in the starter code.
  **********************************************************************************************************************/
 Customer* findMax(String type) 
 {

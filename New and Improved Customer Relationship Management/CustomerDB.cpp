@@ -113,7 +113,7 @@ Customer& CustomerDB::operator[](String name)
 		capacity *= 2;									// Amortized Doubling
 	}
 	data[length] = Customer(name);						// Add the new customer to the database.
-	length += 1;										// Increment the length of the databse.
+	length += 1;										// Increment the length of the database.
 	return data[length - 1];							// Return the new customer.
 }
 
