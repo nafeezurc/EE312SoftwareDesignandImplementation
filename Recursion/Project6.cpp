@@ -40,8 +40,8 @@ This function returns the smallest of the elements in an array x[] of n elements
 *********************************************************************************************************************/
 int minRec1(int x[], int n)
 {
-	// Base Case: Array of 1
-	if (n == 1)
+	// Base Case: Array of 1 or less
+	if (n <= 1)
 	{
 		return x[0];
 	}
@@ -65,7 +65,7 @@ This function returns the smallest of the elements in an array x[] of n elements
 int minRec2(int x[], int n) 
 {
 	// Base Case
-	if (n == 1)
+	if (n <= 1)
 	{
 		return x[0];
 	}
