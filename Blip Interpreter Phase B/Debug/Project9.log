@@ -1,0 +1,5 @@
+﻿  Project10.cpp
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project10\string.h(55): warning C4018: '<': signed/unsigned mismatch
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project10\statementtree.h(205): warning C4715: 'StatementTree::recursiveBuild': not all control paths return a value
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\project10\expressiontree.h(162): warning C4715: 'ExpressionTree::evaluateExpression': not all control paths return a value
+  Project9.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Project10\Debug\Project9.exe

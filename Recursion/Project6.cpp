@@ -47,13 +47,14 @@ int minRec1(int x[], int n)
 	}
 
 	// Inductive Step
-	if (x[n - 1] < minRec1(x, n - 1))
+	int recResult = minRec1(x, n - 1);
+	if (x[n - 1] < recResult)
 	{
 		return x[n - 1];
 	}
 	else
 	{
-		return minRec1(x, n - 1);
+		return recResult;
 	}
 }
 
@@ -71,13 +72,15 @@ int minRec2(int x[], int n)
 	}
 
 	// Inductive Step
-	if (minRec2(x, n / 2) < minRec2(x + (n / 2), n - (n / 2)))
+	int leftMin = minRec2(x, n / 2);
+	int rightMin = minRec2(x + (n / 2), n - (n / 2));
+	if (leftMin < rightMin)
 	{
-		return minRec2(x, (n / 2));
+		return leftMin;
 	}
 	else
 	{
-		return minRec2(x + (n / 2), n - (n / 2));
+		return rightMin;
 	}
 }
 
@@ -479,7 +482,7 @@ void solveMazeIt(int row, int col) {
 	int dir = 2; // 0 is up, 1 is right, 2 is down, 3 is left.
 	maze[row][col] = 2; // drop a bread crumb in the starting square
 	while (row < MATRIX_SIZE - 1) { // the exit is the only open square 
-				// in the last row
+									// in the last row
 
 		int potentialRow, potentialCol;
 		adjacentCell(row, col, dir, &potentialRow, &potentialCol);
@@ -576,7 +579,7 @@ Martian change(int cents)
 		minimumCoins = sumCoins(resultDodeks);
 		optimalResult = resultDodeks;
 	}
-    if (cents > 5)			// Greater than 5 cents but less than 12 cents
+    if (cents > 5)			// Greater than 5 cents 
 	{
 		resultNicks = { 0, 1, 0 };
 		resultNicks = addTwoMartians(resultNicks, change(cents - 5));
@@ -594,7 +597,7 @@ Martian change(int cents)
 			}
 		}
 	}
-	// Greater than 1 cent but less than 5 cents
+	// Greater than 1 cent
 	resultPennies = { 1, 0, 0 };
 	resultPennies = addTwoMartians(resultPennies, change(cents - 1));
 	if (minimumCoins == -1)		// If the minimum amount of coins has not been set yet, set it.
@@ -657,7 +660,7 @@ Martian change(int cents, int nick_val, int dodek_val)
 		minimumCoins = sumCoins(resultDodeks);
 		optimalResult = resultDodeks;
 	}
-	if (cents > nick_val)			// Greater than nick_val cents but less than dodek_val cents
+	if (cents > nick_val)			// Greater than nick_val cents 
 	{
 		resultNicks = { 0, 1, 0 };
 		resultNicks = addTwoMartians(resultNicks, change(cents - nick_val));
@@ -751,8 +754,8 @@ Martian changeIt(int cents)
                                   changeIt (multiple parameters)
 This function uses iteration to calculate the optimal (fewest total coins) change for a given amount of money. The
 function returns a Martian struct that indicates this optimal collection of coins. Unlike the version with one 
- parameter, this function is a more general version where the coins have values a cents and b cents, with a and b
- being algebraic.
+parameter, this function is a more general version where the coins have values a cents and b cents, with a and b
+being algebraic.
 *********************************************************************************************************************/
 Martian changeIt(int cents, int nick_value, int dodek_value) 
 {

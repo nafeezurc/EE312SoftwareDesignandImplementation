@@ -1,3 +1,9 @@
-﻿  Project7.cpp
-c:\users\gopika\desktop\ee 312\chase\students\ga8786\project7\project7.cpp(214): warning C4018: '<': signed/unsigned mismatch
-  Bugs.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Project7\Debug\Bugs.exe
+﻿  stdafx.cpp
+  Project7.cpp
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\completed projects\a bug's life\project7.cpp(214): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+c:\users\gopika\desktop\ee 312\chase\students\ga8786\completed projects\a bug's life\main.cpp(123): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  Generating Code...
+main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  Bugs.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Completed Projects\A Bug's Life\Debug\Bugs.exe

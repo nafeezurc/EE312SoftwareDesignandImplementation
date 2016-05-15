@@ -1,9 +1,1 @@
-﻿  Project6.cpp
-c:\users\gopika\desktop\ee 312\chase\students\ga8786\project6\project6.cpp(25): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-c:\users\gopika\desktop\ee 312\chase\students\ga8786\project6\project6.cpp(182): warning C4715: 'strCompare': not all control paths return a value
-c:\users\gopika\desktop\ee 312\chase\students\ga8786\project6\project6.cpp(233): warning C4715: 'strCompare2': not all control paths return a value
-  Compiling...
-  main.cpp
-  Generating Code...
-  Recursion.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Project6\Debug\Recursion.exe
+﻿  Recursion.vcxproj -> C:\Users\Gopika\Desktop\EE 312\chase\students\ga8786\Completed Projects\Recursion\Debug\Recursion.exe
